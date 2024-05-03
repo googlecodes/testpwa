@@ -3,7 +3,7 @@
   "short_name": "PWA Splash", // 应用短名称
   "description": "PWA SPlash Screens", // 应用描述
   "scope": ".", // 定义了应用的作用域，点（.）表示当前目录
-  "start_url": "/testpwa", // 应用启动时加载的URL
+  "start_url": "/testpwa/m.html", // 应用启动时加载的URL
   "display": "standalone", // 显示模式，standalone表示以独立应用模式显示
   "orientation": "portrait", // 默认的显示方向，portrait表示纵向
   "theme_color": "#ffffff", // 主题颜色，这里设置为白色
