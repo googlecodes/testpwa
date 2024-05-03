@@ -60,7 +60,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 if (isiOS) {
   installButton.addEventListener('click', () => {
     // 在这里添加一个链接到您的应用在苹果应用商店的URL
-    window.location.href = 'https://www.youdao.com/m/';
+    window.location.href = 'https://www.baidu.com/';
   });
 }
 
