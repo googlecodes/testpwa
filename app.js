@@ -20,17 +20,14 @@ if ('serviceWorker' in navigator) {
 
 
 
-///////////// 在您的 app.js 文件中添加以下代码
+///////////// 安装按钮
 
 // 检测用户是否在iOS设备上
 const isiOS = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-
 // 检测用户是否在Android设备上使用Chrome浏览器
 const isChrome = /Chrome/i.test(navigator.userAgent) && /Google Inc/i.test(navigator.vendor);
-
 // DOM元素引用
 const installButton = document.getElementById('installBtn');
-
 // 检测是否可以安装PWA
 let deferredPrompt;
 
@@ -41,7 +38,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   // 显示安装按钮
   installButton.style.display = 'block';
-
+  // 点击安装
   installButton.addEventListener('click', () => {
     // 隐藏安装按钮
     installButton.style.display = 'none';
@@ -63,7 +60,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 if (isiOS) {
   installButton.addEventListener('click', () => {
     // 在这里添加一个链接到您的应用在苹果应用商店的URL
-    window.location.href = '您的应用在苹果应用商店的URL';
+    window.location.href = 'https://www.youdao.com/m/';
   });
 }
 
